@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>print.css &mdash; only display what&#39;s needed</title>
+		<meta name="viewport" content="width=1000px">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="styles/shCoreDefault.css">
+		<link rel="icon" type="image/png" href="favicon.png">
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700,400italic" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+
+	<div id="content" role="main">
+
+	<header>
+		<div class="centre">
+			<h1>print.css</h1>
+			<h2><strong>print.css</strong> is an open source print stylesheet for the <em>environmentally-conscious</em> web developer *</h2>
+			<a id="print" href="javascript:print();" title="print this page">print this page</a>
+		</div>
+	</header>
+
+	<div id="main">
+		<div class="centre clearfix">
+
+			<ul>
+				<li>Lightweight footprint</li>
+				<li>CSS3 compliant</li>
+				<li>Cross-browser</li>
+				<li>BSD and MIT licenses</li>
+				<li>Eco-friendly</li>
+			</ul>
+
+			<div id="code">
+<pre class="brush: css;">@media only print
+{
+	body * { display: none !important; }
+	body:after { content: "Don't waste paper!"; }
+}</pre>
+			</div>
+
+			<div id="download">
+
+				<h3>Download print.css now!</h3>
+
+				<a id="download-dev" class="resource" href="print.css">Development <span>Uncompressed (529 bytes)</span></a>
+				<a id="download-pro" class="resource" href="print.min.css">Production <span>Minified (325 bytes)</span></a>
+
+				<h4>Current Release: v1.0.0</h4>
+
+			</div>
+<!--
+			<div id="social">
+				<div class="twitter">
+					<a href="http://twitter.com/share" class="twitter-share-button" data-text="print.css &mdash; only display what&#39;s needed #printcss" data-url="http://printstylesheet.com/" data-count="horizontal" data-via="dbushell">Tweet</a>
+				</div>
+				<div class="google">
+					<g:plusone size="medium"></g:plusone>
+				</div>
+			</div>
+-->
+		</div>
+	</div>
+
+	</div><!--/#content-->
+
+	<footer role="contentinfo">
+		<div class="centre clearfix">
+			<div class="col1">
+				<h3>* In all seriousness...</h3>
+				<p>You may have noticed a degree of tongue-in-cheek humour with <strong>print.css</strong>. This is not intended to be used blindly, rather it exists to raise awareness of lazy print css development.</p>
+				<p>Paper is costly, yet there are many reasons a web page may need to be printed (invoices, receipts and tickets to name a few).</p>
+				<p>Make <em>your</em> print CSS eco-friendly; only display what&#39;s needed. Make sure your web pages don&#39;t span a whole ream!</p>
+			</div>
+			<div class="col2">
+				<h3>About the author</h3>
+				<p><strong>print.css</strong> is an awareness campaign by <a rel="author" target="_blank" href="http://dbushell.com"><strong>David Bushell</strong></a>, a website designer and developer working in London, UK.</p>
+				<p>I am researching the possibility for a real print.css boilerplate, so send me your feedback!</p>
+				<a href="http://twitter.com/dbushell" data-text-color="#ffffff" data-link-color="#53c565" class="twitter-follow-button">Follow @dbushell</a>
+				<p><small>Copyright &copy; 2011 <a rel="me" title="David Bushell on Google+" href="https://plus.google.com/112664170427933857280/">David Bushell</a></small></p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/shCore.js"></script>
+	<script type="text/javascript" src="scripts/shBrushCss.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+
+			SyntaxHighlighter.all();
+
+		});
+	</script>
+<!--
+	<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/plusone.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-9497100-9']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+-->
+	</body>
+</html>
