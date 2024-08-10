@@ -7,4 +7,4 @@ Mock website from 2011… formerly printstylesheet.com
 
 * * *
 
-Copyright © [David Bushell](http://dbushell.com) | [@dbushell](http://twitter.com/dbushell)
+Copyright © [David Bushell](https://dbushell.com)
